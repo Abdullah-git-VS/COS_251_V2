@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <image type ="icon" scr="abdullahcoll/COS_251/photo/Untitled.png" >
+<link rel="icon" href="photo/Untitled.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <style>
-	---deregthji---
         body {
             font-family: Arial, sans-serif;
-            background-color:rgb(36, 132, 201);
+            background-color:rgb(143, 201, 36);
             display: flex;
             justify-content: center;
             align-items: center;
