@@ -4,7 +4,7 @@
 
 <head>
 <title> my project </title>
-<link rel="stylesheet" href="index2.php">
+<link rel="stylesheet" href="index2.css">
 </head>
 
 <body>
