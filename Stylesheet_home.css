@@ -1,4 +1,4 @@
-/*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,9 +30,7 @@ header{
 }
 .logo{
     margin-left: 20px ;
-    border: 10px powderblue solid;
-}>
-*/
+}
 
 .hover-effect:hover {
     filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);

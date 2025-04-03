@@ -18,14 +18,13 @@
 
                 </li>
                 <li>
-                    <a href="Sign In.php" target="_blank" class="hover-link"><img src="photo/Log in.svg" width="24" height="24" class="hover-effect" alt="Wikipedia Logo"></a>
+                    <a href="Sign In.php" target="_blank" class="hover-link">
+                        <img src="photo/Log in.svg" width="24" height="24" class="hover-effect" alt="Wikipedia Logo">
+                    </a>
 
                 </li>
                 <li>
                     <a href="Sign In.php" target="_blank" class="hover-link"><img src="photo/More horizontal.svg" width="24" height="24" class="hover-effect" alt="setting"></a>
-
-                    <a href="Sign In.php"><img src="photo/More horizontal.svg" alt="setting" width="24" height="24"></a>
-
                 </li>
             </ul>
         </nav>
