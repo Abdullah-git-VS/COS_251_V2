@@ -14,16 +14,16 @@
 <body>
     <center>
         <div class="main">
-            <h2>موقع تسويقي اونلاين</h2>
-            <form action="insert.php" method="post">
+            <form action="insert.php" method="post" enctype="multipart/form-data">
+                <h2>موقع تسويقي اونلاين</h2>
                 <img src="transportation.jpg" alt="logo" width="450px">
-                <input type="text" name="name" placeholder="name">
+                <input type="text" name='name'>
                 <br>
-                <input type="text" name="price" placeholder="price">
+                <input type="text" name='price'>
                 <br>
-                <input type="file" name="price" id="file" name="image" style="display: none;">
+                <input type="file" id="file" name='image' style='display: none;'>
                 <label for="file">اختيار صورة للمنتج</label>
-                <button name="upload">✅رفع المنتج</button>
+                <button name='upload'>✅رفع المنتج</button>
                 <br><br>
                 <a href="prouduct.php">عرض المنتجات</a>
             </form>
