@@ -1,0 +1,39 @@
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #d7ec9c;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+.navigation ul{
+    display: flex;
+    list-style-type:none ;
+    gap: 2rem;
+}
+.navigation img{
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.navigation img:hover{
+    color: aliceblue;
+    text-decoration: none;
+}
+.logo{
+    margin-left: 20px ;
+    border: 10px powderblue solid;
+}>
+*/
+.hoover:hover{
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
+
+}
