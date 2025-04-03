@@ -33,7 +33,7 @@ header{
     border: 10px powderblue solid;
 }>
 */
-.hoover:hover{
-    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
 
+.hover-effect:hover {
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
 }

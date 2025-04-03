@@ -13,15 +13,17 @@
             <ul>
                 <li>
                     <a href="Shopping_cart.php">
-                        <img src="photo/Shopping cart.svg" alt="Shopping cart" width="24" height="24"class="hoover">
+                        <img src="photo/Shopping cart.svg" alt="Shopping cart" width="24" height="24" class="hover-effect">
                     </a>
 
                 </li>
                 <li>
-                    <a href="Sign In.php"><img src="photo/Log in.svg" alt="Log in" width="24" height="24"></a>
+                    <a href="Sign In.php" target="_blank" class="hover-link"><img src="photo/Log in.svg" width="24" height="24" class="hover-effect" alt="Wikipedia Logo"></a>
 
                 </li>
                 <li>
+                    <a href="Sign In.php" target="_blank" class="hover-link"><img src="photo/More horizontal.svg" width="24" height="24" class="hover-effect" alt="setting"></a>
+
                     <a href="Sign In.php"><img src="photo/More horizontal.svg" alt="setting" width="24" height="24"></a>
 
                 </li>
@@ -29,17 +31,10 @@
         </nav>
     </header>
     <hr>
-    <a href="https://example.com" target="_blank" class="hover-link">
-    <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/wikipedia.svg" 
-         width="200" height="200" class="hover-effect" alt="Wikipedia Logo">
-</a>
 
-<style>
+    <style>
 
-    .hover-effect:hover {
-        filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
-    }
-</style>
+    </style>
 </body>
 
 </html>
