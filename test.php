@@ -17,18 +17,18 @@
             <form action="insert.php" method="post" enctype="multipart/form-data">
                 <h2>موقع تسويقي اونلاين</h2>
                 <img src="transportation.jpg" alt="logo" width="450px">
-                <input type="text" name='name'>
+                <input type="text" name='name' placeholder="name">
                 <br>
-                <input type="text" name='price'>
+                <input type="text" name='price' placeholder="price">
                 <br>
                 <input type="file" id="file" name='image' style='display: none;'>
                 <label for="file">اختيار صورة للمنتج</label>
                 <button name='upload'>✅رفع المنتج</button>
                 <br><br>
-                <a href="prouduct.php">عرض المنتجات</a>
+                <a href="prouducts.php">عرض المنتجات</a>
             </form>
         </div>
-        <p>Developer by love</p>
+        <p>Developer by love❤️</p>
     </center>
 </body>
 
