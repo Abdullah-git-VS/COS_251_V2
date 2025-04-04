@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 03, 2025 at 07:25 PM
+-- Generation Time: Apr 04, 2025 at 05:46 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -25,6 +25,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `addcard`
+--
+
+CREATE TABLE `addcard` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `price` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `addcard`
+--
+
+INSERT INTO `addcard` (`id`, `name`, `price`) VALUES
+(5, 'جمل', '10000$'),
+(6, 'جمل', '10000$');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `prod`
 --
 
@@ -40,11 +60,20 @@ CREATE TABLE `prod` (
 --
 
 INSERT INTO `prod` (`id`, `name`, `price`, `image`) VALUES
-(7, 'جحش', '777777$', 'images/');
+(23, 'جمل', '10000$', 'images/Untitled2.png'),
+(24, 'حصان', '200000$', 'images/Untitled2.png'),
+(25, 'تيس', '50000$', 'images/Untitled2.png'),
+(27, 'ماعز', '70000$', 'images/Untitled2.png');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `addcard`
+--
+ALTER TABLE `addcard`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `prod`
@@ -57,10 +86,16 @@ ALTER TABLE `prod`
 --
 
 --
+-- AUTO_INCREMENT for table `addcard`
+--
+ALTER TABLE `addcard`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `prod`
 --
 ALTER TABLE `prod`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
