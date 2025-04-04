@@ -25,14 +25,22 @@
         }
         table{
             box-shadow: 1px 1px 10px silver;
+            border-radius: var(--bs-border-radius);
         }
         thead{
             background-color: #3498db;
             color: white;
             text-align: center;
+            border-radius: var(--bs-border-radius);
+
         }
         tbody{
             text-align: center;
+            border-radius: var(--bs-border-radius);
+        }
+        ath,bth{
+            border-top-left-radius: var(--bs-border-radius);
+
         }
 
     </style>
@@ -50,13 +58,13 @@
     while ($row = mysqli_fetch_array($result)) {
         echo "    
         <center>
-        <main>
+        <main >
             <table class='table'>
-            <thead>
+            <thead >
                 <tr>
-                    <th scope='col'>product name</th>
+                    <th scope='col' class='ath'>product name</th>
                     <th scope='col'>product price</th>
-                    <th scope='col'>Delete product</th>
+                    <th scope='col' class='bth'>Delete product</th>
                 </tr>
                 </thead>
                 <tbody>
