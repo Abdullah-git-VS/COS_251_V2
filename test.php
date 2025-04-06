@@ -18,7 +18,7 @@
         <div class="main">
             <form action="insert.php" method="post" enctype="multipart/form-data">
                 <h2>إضافة المنتجات</h2>
-                <img src="transportation.jpg" alt="logo" width="450px">
+                <img src="photo\transportation.jpg" alt="logo" width="450px">
                 <div class="second">
                     <input type="text" name='name' placeholder="name">
                     <br>
