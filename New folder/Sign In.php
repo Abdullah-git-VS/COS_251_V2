@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="icon" href="photo/Untitled.png">
+    <link rel="icon" href="photo/Untitled.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
-    <link rel="stylesheet" href="index2.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color:rgb(201, 36, 36);
+            background-image: linear-gradient(#000 50%, #1d2d44);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
+
         .signin-container {
             background: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            
+            width: 300px
+
         }
+
         .signin-container h2 {
             margin-bottom: 20px;
             text-align: center;
         }
+
         .form-group {
             margin-bottom: 15px;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 5px;
         }
+
         .form-group input {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+
         .form-group button {
             width: 100%;
             padding: 10px;
@@ -50,9 +56,11 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         .form-group button:hover {
             background-color: #0056b3;
         }
+
         .error {
             color: red;
             font-size: 0.9em;
@@ -61,6 +69,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="signin-container">
         <h2>Sign In</h2>
@@ -79,4 +88,5 @@
         </form>
     </div>
 </body>
+
 </html>

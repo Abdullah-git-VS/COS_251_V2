@@ -74,7 +74,7 @@
             <center>
             ";
     }
-    //mysqli_close($con);
+    mysqli_close($con);
     ?>
     </center>
 </body>

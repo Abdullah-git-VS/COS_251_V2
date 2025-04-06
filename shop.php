@@ -11,52 +11,54 @@
     <link rel="stylesheet" href="index.css">
     <title>prouducts | المنتجات</title>
     <style>
-        h3,h5{
+        h3,
+        h5 {
             font-family: "Cairo", sans-serif;
             font-weight: bold;
         }
-        .card{
+
+        .card {
             float: right;
-            margin-top: 20px;
+            margin-top: 200px;
             margin-left: 10px;
             margin-right: 10px;
-
         }
-        .card img{
+
+        .card img {
             width: 100%;
             height: 200px;
 
         }
-        main{
-            width: 60%;
+
+        main {
+            padding-right: 20px;
         }
-        #aa{
+
+        #aa {
             margin-left: 70px;
             text-decoration: none;
             color: white;
-        } 
-        nav{
+        }
+
+        nav {
             background-color: black;
-        } 
-
-
+        }
     </style>
 </head>
+
 <body>
     <nav calss="navbar">
-        <a id="aa" class="navbar-brand" href="card.php" >Mycard | عربتي</a>
+        <a id="aa" class="navbar-brand" href="card.php">Mycard | عربتي</a>
     </nav>
     <center>
         <h3>المنتجات المتوفرة</h3>
-    </center>
-        <?php
-        include('config.php');
-        $result = mysqli_query($con, "SELECT * FROM prod");
-        while ($row = mysqli_fetch_array($result)) {
-            echo "
-        <center>
         <main>
-            <div class='card' style='width: 17rem; border: 1px black solid;'>
+            <?php
+            include('config.php');
+            $result = mysqli_query($con, "SELECT * FROM prod");
+            while ($row = mysqli_fetch_array($result)) {
+                echo "
+            <div class='card' style='width: 15rem; border: 1px black solid;'>
              <img src='$row[image]' class='card-img-top'>
              <div class='card-body' style='border: 1px black solid;'>
                     <h5 class='card-title'>$row[name]</h5>
@@ -64,12 +66,10 @@
                     <a href='val.php? id=$row[id]' class='btn btn-success'>إضافة المنتج للعربة</a>
                 </div>
             </div>
-        </main>
-            <center>
             ";
-        }
-        //mysqli_close($con);
-        ?>
-    </center>
+            }
+            mysqli_close($con);
+            ?>
+        </main>
 </body>
 </html>

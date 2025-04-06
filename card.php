@@ -10,39 +10,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عربتي | عربة المنتجات</title>
     <style>
-        h3{
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h3 {
             font-family: 'Cario', sans-serif;
             font-weight: bold;
         }
 
-        main{
-            width: 40%;
+        main {
+            margin-top: 50px;
+            width: 70%;
             margin-top: 30px;
         }
-        .table{
-            --bs-table-bg:none;
-            --bs-table-color:none;
+
+        .table {
+            --bs-table-bg: none;
+            --bs-table-color: none;
         }
-        table{
+
+        table {
             box-shadow: 1px 1px 10px silver;
             border-radius: var(--bs-border-radius);
         }
-        thead{
+
+        thead {
             background-color: #3498db;
             color: white;
             text-align: center;
             border-radius: var(--bs-border-radius);
 
         }
-        tbody{
+
+        tbody {
             text-align: center;
             border-radius: var(--bs-border-radius);
         }
-        ath,bth{
+
+        ath,
+        bth {
             border-top-left-radius: var(--bs-border-radius);
 
         }
-
     </style>
 </head>
 
@@ -51,38 +65,34 @@
         <h3>
             منتجاتك المحجوزة
         </h3>
-    </center>
-    <?php
-    include('config.php');
-    $result = mysqli_query($con, "SELECT * FROM addcard");
-    while ($row = mysqli_fetch_array($result)) {
-        echo "    
-        <center>
-        <main >
+        <main>
             <table class='table'>
-            <thead >
-                <tr>
-                    <th scope='col' class='ath'>product name</th>
-                    <th scope='col'>product price</th>
-                    <th scope='col' class='bth'>Delete product</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope='col' class='ath'>product name</th>
+                        <th scope='col'>product price</th>
+                        <th scope='col' class='bth'>Delete product</th>
+                    </tr>
                 </thead>
-                <tbody>
+                <?php
+                include('config.php');
+                $result = mysqli_query($con, "SELECT * FROM addcard");
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "
+                    <tbody>
                     <tr>
                         <td>$row[name]</td>
                         <td>$row[price]</td>
                         <td><a href='del_card.php? id=$row[id]' class='btn btn-danger'>ازالة</a></td>
-                    </tr>
+                    </tr>";
+                }
+                mysqli_close($con);
+                ?>
                 </tbody>
             </table>
         </main>
-    </center>";
-    }
-    ?>
-    <center>
         <a href="shop.php">صفحة المنتجات</a>
     </center>
-    
 </body>
 
 </html>
