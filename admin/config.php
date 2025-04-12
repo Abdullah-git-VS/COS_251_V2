@@ -1,3 +1,3 @@
 <?php
-$con = mysqli_connect('localhost','root','12345678','shop_db');
+$con = mysqli_connect('localhost','root','12345678','online');
 ?>
