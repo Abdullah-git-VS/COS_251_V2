@@ -24,6 +24,7 @@ $data = mysqli_fetch_array($up);
             padding: 20px;
             box-shadow: 1px 1px 10px silver;
             margin-top: 50px;
+            border-radius: 5px;
         }
     </style>
 </head>

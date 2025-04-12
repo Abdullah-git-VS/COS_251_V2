@@ -19,7 +19,7 @@
 
         .card {
             float: right;
-            margin-top: 200px;
+            margin-top: 20px;
             margin-left: 10px;
             margin-right: 10px;
         }
@@ -58,7 +58,7 @@
             $result = mysqli_query($con, "SELECT * FROM prod");
             while ($row = mysqli_fetch_array($result)) {
                 echo "
-            <div class='card' style='width: 15rem; border: 1px black solid;'>
+            <div class='card' style='width: 14rem; border: 1px black solid;'>
              <img src='$row[image]' class='card-img-top'>
              <div class='card-body' style='border: 1px black solid;'>
                     <h5 class='card-title'>$row[name]</h5>
@@ -72,4 +72,5 @@
             ?>
         </main>
 </body>
+
 </html>

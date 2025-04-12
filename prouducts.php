@@ -22,6 +22,8 @@
             margin-top: 20px;
             margin-left: 10px;
             margin-right: 10px;
+            box-shadow: 1px 1px 10px silver;
+
 
         }
 
@@ -48,9 +50,9 @@
 </head>
 
 <body>
-    <nav calss="navbar">
-        <a id="aa" class="navbar-brand" href="test.php">Add Product | إضافة منتج</a>
-    </nav>
+    <?php
+    include('nav.php');
+    ?>
     <center>
         <h3>جميع المنتجات المتوفرة</h3>
     </center>

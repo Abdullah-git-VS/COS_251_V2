@@ -25,11 +25,11 @@
 
                 <input style="display: none;" type="text" name='o' value='<?php echo $data['id'];?>'>
                 <br>
-                <input type="text" name='id' value='<?php echo $data['id'];?>'>
+                ID:<input type="text" name='id' value='<?php echo $data['id'];?>'>
                 <br>
-                <input type="text" name='name' value='<?php echo $data['name'];?>'>
+                NAME:<input type="text" name='name' value='<?php echo $data['name'];?>'>
                 <br>
-                <input type="text" name='price' value="<?php echo $data['price'];?>">
+                PRICE<input type="text" name='price' value="<?php echo $data['price'];?>">
                 <br>
                 <input type="file" name='image' id="file" value="<?php echo $data['image'];?>" style='display: none;'>
                 <label for="file">تحديث صورة للمنتج</label>
