@@ -13,8 +13,7 @@ if (isset($_POST['update'])) {
     $image_up = "images/".$image_name;
     $update = "UPDATE products SET name='$NAME' , price='$PRICE', image='$image_up', id='$ID_n' WHERE id=$ID_o";
     mysqli_query($con, $update);
-
-
+    mysqli_close($con);
     header('location: test.php');
 }
 ?>
